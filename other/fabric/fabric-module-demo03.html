@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过webpack加载</title>
+</head>
+<body>
+
+</body>
+<script src="../../lib/require.js"></script>
+<script>
+    /**
+     * 1 通过webpack，即 npm install fabric
+     * 2 import fabric from "fabric";
+     * 3 使用
+     */
+    import fabric from "fabric";
+    const Fabric = fabric.fabric;
+    new Fabric.Canvas('canvas', {preserveObjectStacking: true});
+</script>
+</html>
